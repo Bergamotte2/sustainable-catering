@@ -1,0 +1,13 @@
+#frame1 {
+	display: flex;
+}
+
+#frame1 > * {
+	padding: 10px;
+	border: solid black 1px;
+}
+
+#fish1 {
+	max-height: 300px;
+}
+
