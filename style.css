@@ -24,8 +24,13 @@ nav > div > * {
 	border-bottom: solid white 2px;
 }
 
-nav > a > img {
+#logo {
 	max-height: 100px;
+}
+
+.imgdes {
+	display: block;
+	border: 10px solid black;
 }
 
 #frame1 {
