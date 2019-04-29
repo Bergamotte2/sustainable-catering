@@ -28,8 +28,18 @@ nav > div > *:hover {
 	transition: 0.2s ease all; 
 }
 
+<<<<<<< HEAD
 nav > a > img {
 	max-height: 150px;
+=======
+#logo {
+	max-height: 100px;
+>>>>>>> 5b87dd2da6d79ad48308b9fe633ca3a7f3c7330f
+}
+
+.imgdes {
+	display: block;
+	border: 10px solid black;
 }
 
 #frame1 {
