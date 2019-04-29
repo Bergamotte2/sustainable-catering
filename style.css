@@ -21,11 +21,15 @@ nav > div {
 nav > div > * {
 	font-size: 150%;
 	padding: 10px;
-	border-bottom: solid white 2px;
+}
+
+nav > div > *:hover {
+	border-bottom: solid white 3px;
+	transition: 0.2s ease all; 
 }
 
 nav > a > img {
-	max-height: 100px;
+	max-height: 150px;
 }
 
 #frame1 {
