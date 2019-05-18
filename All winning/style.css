@@ -1,3 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body, html {
+  width: 100%;
+}
+
 body {
 	background: #8FBF26;
 	font-family: "Architects Daughter", sans-serif;
