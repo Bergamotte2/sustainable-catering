@@ -42,13 +42,6 @@ body {
 	font-size: 150%;
 }
 
-#map {
-	margin: 0% 30%;
-    height: 500px;
-    width: 100px;
-    border-radius: 1%;
-}
-
 footer {
 	margin-top: 4.9%;
   background: black;
