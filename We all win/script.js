@@ -4,7 +4,7 @@ var paperMenu = {
 	$hamburger: $('.hamburger'),
 	offset: 1800,
 	pageHeight: $('#paper-front').outerHeight(),
-	
+
 	open: function() {
 		$('#paper-window').addClass('tilt');
 		this.$hamburger.off('click');
@@ -13,7 +13,7 @@ var paperMenu = {
 		console.log('opening...');
 	},
 	close: function() {
-		this.$window.removeClass('tilt'); 
+		this.$window.removeClass('tilt');
 		$('#container, .hamburger').off('click');
 		this.$hamburger.on('click', this.open.bind(this));
 		this.hamburgerFix(false);
@@ -52,3 +52,7 @@ var paperMenu = {
 };
 
 paperMenu.init();
+
+setTimeout(function(){
+    $('.odometer').text("28054");
+}, 1000);
