@@ -1,0 +1,50 @@
+.container {
+      width: 57%;
+      padding: 0;
+      margin: 4em auto;
+    }
+
+    .chart {
+      width:230px;
+      height:250px;
+      margin-right:2.5em;
+      border-radius: 6px;
+      -webkit-box-shadow: inset 5px 5px 5px rgba(0,0,0,0.2);
+      -moz-box-shadow: inset 5px 5px 5px rgba(0,0,0,0.2);
+      box-shadow: inset 5px 5px 5px rgba(0,0,0,0.2);
+      float:left;
+    }
+
+    .chart.green {
+      background:#7ca312;
+    }
+
+    .circle {
+    	margin:20px auto 0px auto;
+    	font-size:24px;
+      font-family: 'Lato', sans-serif; 
+    	font-weight:400;
+    	color:#fff;
+      border-radius: 100%;
+    }
+
+    .label {
+    	text-align:center;
+    	font-size:22px;
+      font-family: 'Lato', sans-serif;
+      text-shadow: 0 0px 1px #fff;  
+    	font-weight:400;
+    	color:#fff;
+    	margin-top:20px;
+    }
+
+    .easyPieChart {
+        position: relative;
+        text-align: center;
+    }
+
+    .easyPieChart canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }

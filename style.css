@@ -21,11 +21,20 @@ nav > div {
 nav > div > * {
 	font-size: 150%;
 	padding: 10px;
-	border-bottom: solid white 2px;
 }
 
+nav > div > *:hover {
+	border-bottom: solid white 3px;
+	transition: 0.2s ease all; 
+}
+
+<<<<<<< HEAD
+nav > a > img {
+	max-height: 150px;
+=======
 #logo {
 	max-height: 100px;
+>>>>>>> 5b87dd2da6d79ad48308b9fe633ca3a7f3c7330f
 }
 
 .imgdes {
