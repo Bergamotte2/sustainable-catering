@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Amaranth:400,400i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kurale&display=swap');
+@import url('http://fonts.googleapis.com/css?family=Architects+Daughter');
+@import url('https://fonts.googleapis.com/css?family=Handlee&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body, html {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	background-color: #111111;
+}
+
+main {
+  background: white;
+  margin: 0;
+  padding: 0;
+}
+
+.frame1 {
+  background-image: url("../img/table.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: solid black 2px;
+  z-index: 1;
+  height: 900px;
+  border: 0;
+  box-shadow: 0 0 4px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+.mission {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 0 auto;
+  padding: 0;
+  background-color: #111111;
+	background-image: linear-gradient(1deg, #111111, #111111, #111111, #111111, #8FBF26);
+}
+
+.mission h1 {
+  font-family: 'Handlee', cursive;
+  font-size: 100px;
+  margin: 0;
+  padding: 0;
+  color: #F2F2F2;
+}
+
+.mission p {
+	color: #A0CE2A;
+  font-family: 'Amaranth', serif;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  padding-bottom: 40px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.reviewContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-family: 'Amaranth', serif;
+  font-style: italic;
+  font-size: 25px;
+  text-align: justify;
+  padding: 0 40px;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#quote {
+  font-family: 'Amaranth', serif;
+  font-style: italic;
+  font-size: 25px;
+  text-align: justify;
+}
+
+#surname {
+  font-style: normal;
+  margin-top: 10px;
+}
+
+#cook-image {
+  width: 30%;
+  height: auto;
+  margin: 70px auto;
+  box-shadow: 0 2px 4px  hsla(0, 0%, 0%, 0.4);
+}
+
+footer {
+  background: black;
+  color: #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-choices {
+  margin: 10px auto 15px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-choices li {
+  list-style: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  max-height: inherit;
+  font-family: 'Handlee', cursive;
+  font-size: 22px;
+  margin: 0 20px;
+  padding: 0;
+}
+
+.footer-choices li a {
+  text-decoration: none;
+  color: #F2F2F2;
+}
+
+.footer-choices li a:hover {
+  transform: scale(1.1);
+}
+
+footer p {
+  color: #B0B0B0;
+  margin: 0 auto 2px auto;
+  font-family: 'Amaranth', serif;
+  font-style: italic;
+  font-size: 14px;
+}
+
+footer p:last-child {
+  margin-bottom: 20px;
+}
