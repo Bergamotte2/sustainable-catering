@@ -1,7 +1,7 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 body, html {
@@ -130,4 +130,54 @@ button:hover {
 button:active {
   top: 6px;
   box-shadow: 0 0;
+}
+
+footer {
+  margin-top: 17%;
+  background: black;
+  color: #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-choices {
+  margin: 10px auto 15px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-choices li {
+  list-style: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  max-height: inherit;
+  font-family: 'Handlee', cursive;
+  font-size: 22px;
+  margin: 0 20px;
+  padding: 0;
+}
+
+.footer-choices li a {
+  text-decoration: none;
+  color: #F2F2F2;
+}
+
+.footer-choices li a:hover {
+  transform: scale(1.1);
+}
+
+footer p {
+  color: #B0B0B0;
+  margin: 0 auto 2px auto;
+  font-family: 'Amaranth', serif;
+  font-style: italic;
+  font-size: 14px;
+}
+
+footer p:last-child {
+  margin-bottom: 20px;
 }
