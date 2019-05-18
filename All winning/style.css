@@ -10,11 +10,12 @@ body, html {
 
 body {
 	background: #8FBF26;
-	font-family: "Architects Daughter", sans-serif;
-  color: #243040;
+	font-family: Trebuchet MS;
+  	color: #243040;
 }
 
 #title {
+	padding-top: 3%;
   font-size: 300%;
   text-decoration: underline;
 }
@@ -35,14 +36,15 @@ body {
 
 #visitorsGoal {
 	margin: 0% 19%;
+	margin-bottom: 3%;
 	max-width: 1200px;
 	text-align: center;
 	font-size: 150%;
 }
 
 #map {
-	margin: 3% 30%;
+	margin: 0% 30%;
     height: 500px;
-    width: 800px;
+    width: 100px;
     border-radius: 1%;
 }
