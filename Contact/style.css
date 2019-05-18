@@ -1,0 +1,266 @@
+body {
+  position: absolute;
+  background: #8FBF26;
+  box-sizing: content-box;
+  font-family: "Architects Daughter", sans-serif;
+  color: #243040;
+}
+
+#title {
+  padding: 0 0 30px 0;
+  display: block;
+  font-family: Trebuchet MS;
+  text-transform: uppercase;
+  font-size: 300%;
+  text-decoration: underline;
+}
+
+.margin {
+  margin: 3% 42%;
+}
+
+*:focus {
+  outline: none;
+}
+
+.inputGroup {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.inputGroup label {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  pointer-events: none;
+  font-size: 20px;
+  font-family: Trebuchet MS;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+  display: block;
+  width: 280px;
+  border: none;
+  border-bottom: 1px solid #243040;
+  left: 25px;
+  padding: 5px;
+  font-family: Trebuchet MS;
+  font-size: 20px;
+  background: none;
+}
+
+.inputGroup input:focus ~ label,
+.inputGroup input:valid ~ label,
+.inputGroup textarea:focus ~ label,
+.inputGroup textarea:valid ~ label {
+  top: -20px;
+  transition: all 0.3s ease;
+  font-size: 20px;
+}
+
+.inputGroup input:focus ~ .inputBar:before,
+.inputGroup input:focus ~ .inputBar:after,
+.inputGroup textarea:focus ~ .inputBar:before,
+.inputGroup textarea:focus ~ .inputBar:after {
+  width: 50%;
+}
+
+.inputGroup textarea {
+  height: 100px;
+  width: 280px;
+  overflow: auto;
+  resize: none;
+}
+
+.inputGroup .inputBar {
+  position: relative;
+  display: block;
+  width: 290px;
+}
+
+.inputGroup .inputBar:before,
+.inputGroup .inputBar:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  background: black;
+  height: 2px;
+  transition: all 0.2s ease;
+}
+
+.inputGroup .inputBar:after {
+right: 50%;
+}
+
+.inputGroup .inputBar:before {
+  left: 50%;
+}
+
+button {
+  background-color: #DDD;
+  border: none;
+  padding: 15px 0;
+  margin-right: 100px;
+  width: 290px;
+  text-transform: uppercase;
+  font-family: Trebuchet MS;
+  font-size: 20px;
+  border-radius: 5px;
+  box-shadow: 0 6px #a1a1a1;
+  position: relative;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0 4px #a1a1a1;
+  top: 2px;
+}
+
+button:active {
+  top: 6px;
+  box-shadow: 0 0;
+}
+
+#paper-back {
+  width: 100%;
+  height: 100vh;
+  background-color: #243040;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 33px;
+}
+
+#paper-back nav {
+  padding: 120px 34px;
+}
+
+#paper-back nav a {
+  display: block;
+  margin-bottom: 25px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#paper-window {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 2;
+}
+
+#paper-window.tilt {
+  overflow: hidden;
+  pointer-events: none;
+}
+
+#paper-window.tilt #paper-front {
+  transform: rotate(10deg) translateZ(0);
+}
+
+#paper-front {
+  pointer-events: auto;
+  position: relative;
+  z-index: 3;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  transform-origin: center 70%;
+  transition: all 0.3s ease;
+}
+
+#container section {
+  height: 800px;
+  text-align: center;
+  padding-top: 10vh;
+}
+
+@media (max-width: 600px) {
+
+  #container section:first-of-type {
+    padding-top: 15vh;
+  }
+
+  #container section:first-of-type h1 {
+    font-size: 30px;
+  }
+
+  #container section:first-of-type p {
+    font-size: 18px;
+  }
+
+}
+
+#container section:nth-of-type(2n) {
+  background-color: #edf1f5;
+}
+
+.hamburger {
+  position: fixed;
+  z-index: 4;
+  top: 30px;
+  left: 30px;
+  width: 45px;
+  height: 34px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.hamburger span {
+  position: relative;
+}
+
+.hamburger span, .hamburger span:before, .hamburger span:after {
+  display: block;
+  width: 45px;
+  height: 6px;
+  background-color: #243040;
+  border-radius: 2px;
+}
+
+.hamburger span:before, .hamburger span:after {
+  content: "";
+  position: absolute;
+}
+
+.hamburger span:before {
+  bottom: -14px;
+}
+
+.hamburger span:after {
+  bottom: -28px;
+}
+
+.close {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  width: 45px;
+  height: 34px;
+  cursor: pointer;
+}
+
+.close:before, .close:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 45px;
+  height: 6px;
+  top: 50%;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.close:before {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.close:after {
+  transform: translateY(-50%) rotate(-45deg);
+}
