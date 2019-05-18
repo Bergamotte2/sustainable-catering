@@ -1,0 +1,38 @@
+body {
+	background: #8FBF26;
+	font-family: "Architects Daughter", sans-serif;
+  color: #243040;
+}
+
+#title {
+  font-size: 300%;
+  text-decoration: underline;
+}
+
+#winwin {
+	margin: 3% 19%;
+	max-width: 1200px;
+	text-align: center;
+	font-size: 150%;
+}
+
+#visitors {
+	margin: 0% 19%;
+	max-width: 1200px;
+	text-align: center;
+	font-size: 250%;
+}
+
+#visitorsGoal {
+	margin: 0% 19%;
+	max-width: 1200px;
+	text-align: center;
+	font-size: 150%;
+}
+
+#map {
+	margin: 3% 30%;
+    height: 500px;
+    width: 800px;
+    border-radius: 1%;
+}
